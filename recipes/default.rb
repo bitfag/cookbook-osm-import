@@ -11,8 +11,12 @@ user node['osm']['user'] do
 end
 
 # deploy osm-import-scripts
-git '/usr/local/osm-import-scripts' do
+git '/opt/osm-import-scripts' do
     repository 'https://github.com/bitfag/osm-import-scripts.git'
+end
+
+link '/usr/local/bin/osm-import' do
+    to '/opt/osm-import-scripts/osm-import'
 end
 
 include_recipe 'chef-vault'
