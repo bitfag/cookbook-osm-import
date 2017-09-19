@@ -36,7 +36,7 @@ template "/home/#{node['osm']['user']}/.pgpass" do
     source 'pgpass.erb'
     owner node['osm']['user']
     group node['osm']['user']
-    mode '0640'
+    mode '0600'
     variables :pg_host => item['pg_host'],
         :pg_port => item['pg_port'],
         :pg_database => item['pg_database'],
