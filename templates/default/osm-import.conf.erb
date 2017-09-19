@@ -1,0 +1,13 @@
+DUMP_URL="<%= node['osm']['dump_url'] %>"
+LOCAL_DUMP_PATH="<%= node['osm']['local_dump_path'] %>"
+
+PG_HOST="<%= @pg_host %>"
+PG_PORT="<%= @pg_port %>"
+PG_DATABASE="<%= @pg_database %>"
+PG_USER="<%= @pg_user %>"
+
+# osm2pgsql settings
+# required memory for vm is cache*nproc
+CACHE_SIZE="<%= node['osm']['osm2pgsql']['cache_size'] %>"
+NPROC="<%= node['osm']['osm2pgsql']['nproc'] %>"
+OSM2PGSQL_CUSTOM_OPTS="<%= node['osm']['osm2pgsql']['custom_options'] %>"

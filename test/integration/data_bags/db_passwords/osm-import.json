@@ -1,0 +1,8 @@
+{
+    "id":"osm-import",
+    "pg_host": "localhost",
+    "pg_port": "5432",
+    "pg_database": "osm",
+    "pg_user": "osm",
+    "pg_pass": "osm"
+}

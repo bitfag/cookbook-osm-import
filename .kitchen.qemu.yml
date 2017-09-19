@@ -1,0 +1,13 @@
+---
+driver:
+    name: qemu
+
+platforms:
+  - name: ubuntu-16.04
+    driver:
+        image: xenial.qcow2
+        memory: 1024
+    run_list:
+        - recipe[apt]
+
+
